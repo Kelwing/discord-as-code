@@ -6,7 +6,7 @@ Managing a server can be a bit of a nightmare, especially when it comes to peopl
 
 **How is this possible?**
 Short answer: Terraform and CI/CD
-Long answer: We use an awesome tool that is commonly used in the IT space to define a server as code.  Then we use GitHub, and its awesome git workflow to ensure that all changes to the server are approved, and allow people to make comments on changes.
+Long answer: We use an awesome tool that is commonly used in the IT space to define a server as code.  Then we use GitHub, and its awesome git workflow to ensure that all changes to the server are approved, and allow people to make comments on changes.  We use the terraform-provider-discord created by Spaceshuttl on GitHub, and forked and heavily modified by <@!109710323094683648>
 
 **How can I get involved?**
 Check out our github repo: <https://github.com/Kelwing/discord-as-code> fork it, and make pull request changes to make the server into what you'd like it to be!

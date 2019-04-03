@@ -28,7 +28,7 @@ resource "discord_guild_channel" "announce" {
   guild_id = "${discord_guild.dsac.id}"
   name = "announcements"
   parent_id = "${discord_guild_channel.announcements.id}"
-  position = 3
+  position = 1
 }
 
 

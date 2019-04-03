@@ -24,6 +24,14 @@ resource "discord_guild_channel" "about" {
   position = 0
 }
 
+resource "discord_guild_channel" "announce" {
+  guild_id = "${discord_guild.dsac.id}"
+  name = "announcements"
+  parent_id = "${discord_guild_channel.announcements.id}"
+  position = 1
+}
+
+
 resource "discord_guild_channel" "general_category" {
   guild_id = "${discord_guild.dsac.id}"
   name = "General"

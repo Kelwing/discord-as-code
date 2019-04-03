@@ -1,7 +1,7 @@
 resource "discord_guild" "dsac" {
   name = "Discord as Code"
   region = "us-central"
-  icon = "${file("terraform.b64")}"
+  icon = "${file("images/terraform.b64")}"
 }
 
 resource "discord_channel_invite" "test_invite" {

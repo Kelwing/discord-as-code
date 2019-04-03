@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    working_directory: /opt/workspace
+    docker:
+      - image: quay.io/kelwing/terraform-provider-discord
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Apply Terraform
+          command: |
+            terraform apply -auto-approve
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master

@@ -10,6 +10,7 @@ jobs:
       - run:
           name: Apply Terraform
           command: |
+            terraform init
             terraform apply -auto-approve
 workflows:
   version: 2

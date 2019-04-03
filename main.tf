@@ -2,6 +2,9 @@ resource "discord_guild" "dsac" {
   name = "Discord as Code"
   region = "us-central"
   icon = "${file("images/terraform.b64")}"
+  default_message_notifications = 1
+  explicit_content_filter = 1
+  verification_level = 2
 }
 
 resource "discord_channel_invite" "test_invite" {

@@ -37,3 +37,11 @@ resource "discord_guild_channel" "general" {
   parent_id = "${discord_guild_channel.general_category.id}"
   position = 1
 }
+
+resource "discord_guild_channel" "meta" {
+  guild_id = "${discord_guild.dsac.id}"
+  name = "meta"
+  parent_id = "${discord_guild_channel.general_category.id}"
+  position = 2
+  topic = "Meta discussion about the server, CI/CD, terraform"
+}

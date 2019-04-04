@@ -3,6 +3,7 @@ resource "discord_guild_role" "admin" {
   name = "Council"
   hoist = true
   color = 0x4286f4
+  permissions = 0x80
 }
 
 resource "discord_guild_role" "moderator" {

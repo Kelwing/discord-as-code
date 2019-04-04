@@ -9,3 +9,9 @@ resource "discord_guild_member" "trophias" {
   member_id = "85185381837836288"
   roles = ["${discord_guild_role.moderator.id}"]
 }
+
+resource "discord_guild_member" "ryden" {
+  guild_id = "${discord_guild.dsac.id}"
+  member_id = "318044130796109825"
+  roles = ["${discord_guild_role.admin.id}"]
+}

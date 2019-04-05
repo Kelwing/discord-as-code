@@ -53,3 +53,11 @@ resource "discord_guild_channel" "meta" {
   position = 2
   topic = "Meta discussion about the server, CI/CD, terraform"
 }
+
+resource "discord_guild_channel" "memes" {
+  guild_id = "${discord_guild.dsac.id}"
+  name = "memes"
+  parent_id = "${discord_guild_channel.general_category.id}"
+  position = 3
+  topic = "All EPIC memes go here!"
+}

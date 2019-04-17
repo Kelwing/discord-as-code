@@ -21,3 +21,9 @@ resource "discord_guild_member" "king-vlad" {
   member_id = "139836912335716352"
   roles = ["${discord_guild_role.admin.id}"]
 }
+
+resource "discord_guild_member" "jakemakesstuff" {
+  guild_id = "${discord_guild.dsac.id}"
+  member_id = "280610586159611905"
+  roles = ["${discord_guild_role.admin.id}"]
+}
